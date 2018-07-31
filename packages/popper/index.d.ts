@@ -108,12 +108,15 @@ declare namespace Popper {
     eventsEnabled?: boolean;
     modifiers?: Modifiers;
     removeOnDestroy?: boolean;
-
+    arrow?: {
+      element: HTMLElement,
+      enable: boolean
+    },
     onCreate?(data: Data): void;
 
     onUpdate?(data: Data): void;
   }
-
+  
   export interface ReferenceObject {
     clientHeight: number;
     clientWidth: number;
